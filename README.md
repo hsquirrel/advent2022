@@ -58,3 +58,35 @@ context, but so be it.
 | SolutionB1 | 192.1 μs | 1.30 μs | 1.21 μs |  1.00 |  93.7500 | 191.73 KB |        1.00 |
 | SolutionB2 | 124.9 μs | 1.44 μs | 1.13 μs |  0.65 |  83.9844 | 171.95 KB |        0.90 |
 | SolutionB3 | 207.6 μs | 1.51 μs | 1.41 μs |  1.08 | 118.8965 | 243.29 KB |        1.27 |
+
+## [Day 4](./day04/)
+
+``` ini
+
+BenchmarkDotNet=v0.13.2, OS=Windows 10 (10.0.19044.2251/21H2/November2021Update)
+Intel Core i3-1005G1 CPU 1.20GHz, 1 CPU, 4 logical and 2 physical cores
+.NET SDK=7.0.100
+  [Host]     : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+
+
+```
+|     Method |     Mean |   Error |  StdDev | Ratio |     Gen0 | Allocated | Alloc Ratio |
+|----------- |---------:|--------:|--------:|------:|---------:|----------:|------------:|
+| SolutionA1 | 170.7 μs | 1.12 μs | 1.05 μs |  1.00 | 146.9727 | 300.27 KB |        1.00 |
+| SolutionA2 | 104.0 μs | 0.88 μs | 0.82 μs |  0.61 |  58.9600 | 120.59 KB |        0.40 |
+
+``` ini
+
+BenchmarkDotNet=v0.13.2, OS=Windows 10 (10.0.19044.2251/21H2/November2021Update)
+Intel Core i3-1005G1 CPU 1.20GHz, 1 CPU, 4 logical and 2 physical cores
+.NET SDK=7.0.100
+  [Host]     : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+
+
+```
+|     Method |      Mean |    Error |   StdDev | Ratio |     Gen0 | Allocated | Alloc Ratio |
+|----------- |----------:|---------:|---------:|------:|---------:|----------:|------------:|
+| SolutionB1 | 168.92 μs | 1.227 μs | 1.088 μs |  1.00 | 146.9727 | 300.27 KB |        1.00 |
+| SolutionB2 |  97.99 μs | 1.213 μs | 1.134 μs |  0.58 |  58.9600 | 120.59 KB |        0.40 |
